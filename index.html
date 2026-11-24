@@ -135,10 +135,24 @@ body:before{opacity:.08;mix-blend-mode:screen}
 @media(max-width:760px){.cursor-cat{width:48px}.impulso-ui{width:82%}}@media(pointer:coarse){.cursor-cat{display:none}}
 @media(prefers-reduced-motion:reduce){.loader-mark,.loader-name,.loader-track i{animation:none!important}.loader-track i{transform:scaleX(1)}.cursor-cat{display:none}.section-arrive .section-head{animation:none!important}}
 
+
+/* Original illustrated atmosphere: a custom developer desk + Impulso UI, not stock imagery. */
+.ambient-scene{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;isolation:isolate;opacity:.42;mask-image:linear-gradient(to bottom,black 0%,black 58%,transparent 100%)}
+.ambient-main{position:absolute;width:100%;height:100%;inset:0;object-fit:cover;object-position:center;opacity:.72;filter:saturate(.82) contrast(1.04);animation:sceneDrift 34s ease-in-out infinite alternate}
+.ambient-orbit{position:absolute;width:min(39vw,510px);height:auto;right:-7vw;top:17vh;opacity:.28;filter:drop-shadow(0 0 25px #d8795520);animation:orbitFloat 13s ease-in-out infinite alternate}
+.ambient-grain{position:absolute;inset:0;background-image:radial-gradient(#e9e6dc 0.65px,transparent .65px);background-size:7px 7px;opacity:.035;mix-blend-mode:screen}
+@keyframes sceneDrift{from{transform:scale(1.02) translate3d(-.4%,0,0)}to{transform:scale(1.09) translate3d(.6%,-1.1%,0)}}
+@keyframes orbitFloat{from{transform:translate3d(0,0,0) rotate(-3deg)}to{transform:translate3d(-24px,20px,0) rotate(3deg)}}
+body>*:not(.ambient-scene):not(.loader){position:relative;z-index:1}
+.loader{z-index:1000!important}.cursor-cat{z-index:80!important}
+@media(max-width:760px){.ambient-scene{opacity:.24}.ambient-orbit{width:65vw;right:-28vw;top:25vh}.ambient-main{object-position:48% center}}
+@media(prefers-reduced-motion:reduce){.ambient-main,.ambient-orbit{animation:none!important}}
+
   </style>
 </head>
 <body class="is-loading">
   <div class="loader" id="loader" aria-label="Cargando portafolio"><div class="loader-mark">A<span>.</span></div><div class="loader-name">ANTONY</div><div class="loader-track"><i></i></div><div class="loader-caption mono">INITIALIZING PORTFOLIO <span id="loadPercent">00</span>%</div></div>
+  <div class="ambient-scene" aria-hidden="true"><img class="ambient-main" src="assets/antony-universe.svg" alt=""><img class="ambient-orbit" src="assets/impulso-floating-ui.svg" alt=""><span class="ambient-grain"></span></div>
   <div class="cursor-cat" id="cursorCat" aria-hidden="true"><svg viewBox="0 0 120 88"><path class="cat-tail" d="M34 61 C12 68 5 51 17 39 C24 32 30 39 26 45"/><path class="cat-body" d="M28 47 L29 20 L46 31 Q60 25 74 32 L91 19 L93 50 Q100 68 79 72 L48 72 Q25 70 28 47Z"/><path class="cat-inner-ear" d="M34 28l1 12 8-7m39 0 8-8-1 14"/><ellipse class="cat-pupil" cx="47" cy="48" rx="3" ry="5"/><ellipse class="cat-pupil" cx="73" cy="48" rx="3" ry="5"/><path class="cat-nose" d="M57 56q3 3 6 0"/><path class="cat-whiskers" d="M28 56l-14-4m14 10l-14 3m77-9l14-4m-14 10l14 3"/><path class="cat-paw" d="M42 69l-2 9m10-8l-1 9m27-10l2 9m8-10l3 9"/></svg><span>michi.exe</span></div>
   <div class="progress"><span id="progress"></span></div>
   <header class="shell top">
