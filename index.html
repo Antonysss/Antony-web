@@ -102,7 +102,7 @@ body:before{opacity:.08;mix-blend-mode:screen}
 .loader{position:fixed;inset:0;z-index:1000;background:#11120f;color:#efeee7;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .8s ease,visibility .8s ease}.loader.done{opacity:0;visibility:hidden}
 .loader-mark{font:700 clamp(72px,14vw,140px)/.8 var(--display);letter-spacing:-.13em;animation:loaderMark .9s var(--spring) both}.loader-mark span{color:var(--orange)}
 .loader-name{font:500 12px var(--mono);letter-spacing:.45em;margin:25px 0 35px 6px;opacity:0;animation:loaderName .7s .35s ease forwards}
-.loader-track{width:min(220px,55vw);height:2px;background:#3b3c34;overflow:hidden}.loader-track i{display:block;width:100%;height:100%;background:var(--orange);transform:scaleX(0);transform-origin:left;animation:loaderProgress 1.5s .15s ease forwards}
+.loader-track{width:min(220px,55vw);height:2px;background:#3b3c34;overflow:hidden}.loader-track i{display:block;width:100%;height:100%;background:var(--orange);transform:scaleX(0);transform-origin:left;animation:loaderProgress 2.2s .15s ease forwards}
 .loader-caption{color:#85867b;font-size:9px;margin-top:15px;letter-spacing:.16em}.loader-caption span{color:var(--lime);margin-left:8px}body.is-loading{overflow:hidden}
 .cursor-cat{position:fixed;z-index:80;left:0;top:0;width:76px;pointer-events:none;opacity:0;transform:translate3d(-100px,-100px,0);transition:opacity .18s ease;filter:drop-shadow(3px 4px 0 #0008);will-change:transform}
 .cursor-cat.visible{opacity:1}.cursor-cat svg{width:100%;overflow:visible;animation:catStalk .42s ease-in-out infinite alternate}
@@ -148,10 +148,22 @@ body>*:not(.ambient-scene):not(.loader){position:relative;z-index:1}
 @media(max-width:760px){.ambient-scene{opacity:.24}.ambient-orbit{width:65vw;right:-28vw;top:25vh}.ambient-main{object-position:48% center}}
 @media(prefers-reduced-motion:reduce){.ambient-main,.ambient-orbit{animation:none!important}}
 
+
+/* The original illustrated developer scene becomes the opening loading screen. */
+.loader{overflow:hidden;background:#11120f}
+.loader-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.88;animation:loaderScene 12s ease-in-out infinite alternate}
+.loader-vignette{position:absolute;inset:0;background:linear-gradient(90deg,#11120f99,#11120f35 45%,#11120f99),linear-gradient(0deg,#11120fbd,transparent 65%,#11120f55)}
+.loader-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:35px 44px 32px;background:#11120f70;border:1px solid #e9e6dc20;backdrop-filter:blur(7px);box-shadow:0 18px 80px #0006;animation:loaderPanelIn .9s cubic-bezier(.2,.8,.2,1) both}
+.loader-content .loader-name{margin-bottom:29px}
+@keyframes loaderScene{from{transform:scale(1.02) translate3d(-.5%,0,0)}to{transform:scale(1.12) translate3d(.7%,-1.3%,0)}}
+@keyframes loaderPanelIn{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:760px){.loader-art{object-position:48% center}.loader-content{padding:28px 25px}}
+@media(prefers-reduced-motion:reduce){.loader-art,.loader-content{animation:none!important}}
+
   </style>
 </head>
 <body class="is-loading">
-  <div class="loader" id="loader" aria-label="Cargando portafolio"><div class="loader-mark">A<span>.</span></div><div class="loader-name">ANTONY</div><div class="loader-track"><i></i></div><div class="loader-caption mono">INITIALIZING PORTFOLIO <span id="loadPercent">00</span>%</div></div>
+  <div class="loader" id="loader" aria-label="Cargando portafolio"><img class="loader-art" src="assets/antony-universe.svg" alt=""><div class="loader-vignette"></div><div class="loader-content"><div class="loader-mark">A<span>.</span></div><div class="loader-name">ANTONY</div><div class="loader-track"><i></i></div><div class="loader-caption mono">INITIALIZING PORTFOLIO <span id="loadPercent">00</span>%</div></div></div>
   <div class="ambient-scene" aria-hidden="true"><img class="ambient-main" src="assets/antony-universe.svg" alt=""><img class="ambient-orbit" src="assets/impulso-floating-ui.svg" alt=""><span class="ambient-grain"></span></div>
   <div class="cursor-cat" id="cursorCat" aria-hidden="true"><svg viewBox="0 0 120 88"><path class="cat-tail" d="M34 61 C12 68 5 51 17 39 C24 32 30 39 26 45"/><path class="cat-body" d="M28 47 L29 20 L46 31 Q60 25 74 32 L91 19 L93 50 Q100 68 79 72 L48 72 Q25 70 28 47Z"/><path class="cat-inner-ear" d="M34 28l1 12 8-7m39 0 8-8-1 14"/><ellipse class="cat-pupil" cx="47" cy="48" rx="3" ry="5"/><ellipse class="cat-pupil" cx="73" cy="48" rx="3" ry="5"/><path class="cat-nose" d="M57 56q3 3 6 0"/><path class="cat-whiskers" d="M28 56l-14-4m14 10l-14 3m77-9l14-4m-14 10l14 3"/><path class="cat-paw" d="M42 69l-2 9m10-8l-1 9m27-10l2 9m8-10l3 9"/></svg><span>michi.exe</span></div>
   <div class="progress"><span id="progress"></span></div>
@@ -269,11 +281,11 @@ body>*:not(.ambient-scene):not(.loader){position:relative;z-index:1}
     if (reduceMotion) finishIntro();
     else {
       const introTimer = setInterval(() => {
-        const pct = Math.min(100, Math.round((performance.now()-startedAt)/15));
+        const pct = Math.min(100, Math.round((performance.now()-startedAt)/22));
         if (loadPercent) loadPercent.textContent = String(pct).padStart(2,'0');
         if (pct >= 100) { clearInterval(introTimer); finishIntro(); }
       }, 20);
-      setTimeout(finishIntro, 2400);
+      setTimeout(finishIntro, 2900);
     }
 
     // The cat stalks the pointer, keeps its eyes on it and pounces on quick moves.
