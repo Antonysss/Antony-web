@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" fill="none">
+<defs><linearGradient id="panel" x2="1" y2="1"><stop stop-color="#30332a"/><stop offset="1" stop-color="#171815"/></linearGradient></defs>
+<g transform="rotate(-9 260 260)">
+ <rect x="76" y="95" width="350" height="270" rx="18" fill="url(#panel)" stroke="#d87955" stroke-opacity=".75" stroke-width="3"/>
+ <path d="M76 145h350" stroke="#d87955" stroke-opacity=".45" stroke-width="2"/>
+ <circle cx="105" cy="120" r="6" fill="#d87955"/><circle cx="128" cy="120" r="6" fill="#c7d58b"/><circle cx="151" cy="120" r="6" fill="#e9e6dc" opacity=".5"/>
+ <rect x="108" y="178" width="130" height="145" rx="9" fill="#171815" stroke="#c7d58b" stroke-opacity=".35"/>
+ <path d="M128 211h80M128 235h55M128 259h70" stroke="#e9e6dc" stroke-opacity=".55" stroke-width="7" stroke-linecap="round"/>
+ <path d="M128 292l18-14 17 8 20-29 25 12" stroke="#d87955" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+ <rect x="260" y="178" width="132" height="60" rx="8" fill="#242720" stroke="#d87955" stroke-opacity=".5"/>
+ <path d="M278 197h82" stroke="#e9e6dc" stroke-opacity=".5" stroke-width="6" stroke-linecap="round"/><path d="M278 218h48" stroke="#c7d58b" stroke-width="6" stroke-linecap="round"/>
+ <rect x="260" y="253" width="132" height="70" rx="8" fill="#242720" stroke="#d87955" stroke-opacity=".5"/>
+ <circle cx="292" cy="288" r="17" stroke="#c7d58b" stroke-width="7" stroke-dasharray="75 35" transform="rotate(-90 292 288)"/>
+ <path d="M324 278h48m-48 20h35" stroke="#e9e6dc" stroke-opacity=".5" stroke-width="6" stroke-linecap="round"/>
+</g>
+<g class="orbit" stroke="#d87955" stroke-opacity=".6"><ellipse cx="260" cy="260" rx="225" ry="86" transform="rotate(32 260 260)" stroke-width="2"/><circle cx="457" cy="180" r="9" fill="#d87955" stroke="none"/><circle cx="64" cy="348" r="6" fill="#c7d58b" stroke="none"/></g>
+<g class="bits" fill="#c7d58b"><path d="M75 70h22v5H75zm8-8h5v22h-5z"/><path d="M425 400h20v5h-20zm7-8h5v20h-5z"/></g>
+<style>
+.orbit{transform-origin:260px 260px;animation:orbit 24s linear infinite}.bits{animation:bits 6s ease-in-out infinite alternate}
+@keyframes orbit{to{transform:rotate(360deg)}}@keyframes bits{to{transform:translateY(-13px);opacity:.4}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}}
+</style></svg>
