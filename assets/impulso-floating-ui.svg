@@ -15,8 +15,4 @@
 </g>
 <g class="orbit" stroke="#d87955" stroke-opacity=".6"><ellipse cx="260" cy="260" rx="225" ry="86" transform="rotate(32 260 260)" stroke-width="2"/><circle cx="457" cy="180" r="9" fill="#d87955" stroke="none"/><circle cx="64" cy="348" r="6" fill="#c7d58b" stroke="none"/></g>
 <g class="bits" fill="#c7d58b"><path d="M75 70h22v5H75zm8-8h5v22h-5z"/><path d="M425 400h20v5h-20zm7-8h5v20h-5z"/></g>
-<style>
-.orbit{transform-origin:260px 260px;animation:orbit 24s linear infinite}.bits{animation:bits 6s ease-in-out infinite alternate}
-@keyframes orbit{to{transform:rotate(360deg)}}@keyframes bits{to{transform:translateY(-13px);opacity:.4}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}}
-</style></svg>
+</svg>
