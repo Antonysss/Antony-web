@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+<defs>
+ <linearGradient id="night" x2="0" y2="1"><stop stop-color="#171815"/><stop offset="1" stop-color="#22231d"/></linearGradient>
+ <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#33362f"/><stop offset="1" stop-color="#171815"/></linearGradient>
+ <linearGradient id="orange" x2="1" y2="1"><stop stop-color="#f3a06b"/><stop offset="1" stop-color="#b95c3e"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="8"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#night)"/>
+<!-- window and distant city -->
+<g opacity=".55"><path d="M80 95H680V565H80Z" fill="url(#glass)" stroke="#777366" stroke-opacity=".28" stroke-width="3"/><path d="M80 485L80 355 145 355 145 292 211 292 211 390 270 390 270 250 330 250 330 340 395 340 395 205 466 205 466 375 535 375 535 290 605 290 605 485Z" fill="#0c0e0e"/><path d="M80 485H680" stroke="#d87955" stroke-opacity=".45" stroke-width="3"/><circle cx="530" cy="185" r="54" fill="#e8c9a5" opacity=".75"/><path d="M530 115V90M530 280V255M460 185H435M625 185H600" stroke="#e8c9a5" opacity=".3"/></g>
+<!-- windows lights -->
+<g fill="#d87955" opacity=".65"><path d="M174 328h12v18h-12zm90 83h10v15h-10zm78-130h12v17h-12zm90-42h12v17h-12zm74 153h12v17h-12zm103-82h12v17h-12z"/></g>
+<g stroke="#d87955" stroke-opacity=".15" stroke-width="2"><path d="M112 120V520M650 120V520M80 540H680"/></g>
+<!-- floating pixel planet -->
+<g class="planet"><path d="M1180 128h24v-12h24v-12h48v12h24v12h12v24h12v36h-12v24h-24v12h-48v-12h-36v-12h-24v-24h-12v-36h12Z" fill="#bd704e" opacity=".8"/><path d="M1216 151h24v12h24v12h-48v-12h-24v-12Z" fill="#e3a071" opacity=".55"/><ellipse cx="1230" cy="180" rx="108" ry="24" transform="rotate(-18 1230 180)" stroke="#d87955" stroke-width="5" stroke-opacity=".55"/></g>
+<!-- shelf and tiny arcade screen -->
+<g opacity=".7"><path d="M0 590H365V610H0Z" fill="#36362e"/><rect x="64" y="402" width="190" height="154" rx="10" fill="#10110f" stroke="#d87955" stroke-opacity=".6" stroke-width="3"/><rect x="82" y="420" width="154" height="112" rx="4" fill="#262a22"/><path d="M104 490h20v-38h20v38h20v-58h20v58h20v-25h20" stroke="#d87955" stroke-width="8" stroke-linejoin="round"/></g>
+<!-- plant -->
+<g class="plant" stroke="#78805a" stroke-width="9" stroke-linecap="round" opacity=".65"><path d="M330 605Q320 500 260 420M330 605Q355 475 425 405M330 605Q300 470 190 470M330 605Q375 530 470 500"/><path d="M260 420q-72-54-93 5 45 46 93-5Zm165-15q77-59 97-1-45 48-97 1Zm-235 65q-84-21-88 39 61 25 88-39Zm145 65q66-59 113-13-44 52-113 13Z" fill="#626e4d" stroke-width="3"/></g>
+<!-- desk plane -->
+<path d="M0 690Q420 630 800 700T1600 675V900H0Z" fill="#10110f" opacity=".8"/>
+<path d="M0 710Q420 650 800 720T1600 695" stroke="#d87955" stroke-opacity=".24" stroke-width="3"/>
+<!-- laptop -->
+<g class="laptop" transform="translate(1010 420) rotate(-7)">
+ <path d="M80 0h420q18 0 18 18v250H62V18Q62 0 80 0Z" fill="#10110f" stroke="#827968" stroke-width="4"/>
+ <rect x="82" y="22" width="378" height="210" rx="5" fill="#242720"/>
+ <path d="M30 270h500l55 40H0Z" fill="#34352d" stroke="#8d806c" stroke-width="3"/>
+ <path d="M225 285h110" stroke="#d87955" stroke-opacity=".55" stroke-width="4"/>
+ <g stroke="#d87955" stroke-width="5" stroke-linecap="round" opacity=".7"><path d="M120 70h90m-90 24h140m-140 24h65"/><path d="M300 70h100m-100 24h75m-75 24h115" stroke="#c7d58b"/></g>
+ <circle cx="270" cy="15" r="3" fill="#d87955"/>
+</g>
+<!-- framed code note -->
+<g transform="translate(1180 250) rotate(4)" opacity=".55"><rect width="250" height="190" rx="3" stroke="#d87955" stroke-width="3"/><path d="M28 48h135M28 78h180M28 108h105M28 138h160" stroke="#e9e6dc" stroke-opacity=".5" stroke-width="8" stroke-linecap="round"/><path d="M28 160h70" stroke="#d87955" stroke-width="8"/></g>
+<!-- stars and sparks -->
+<g fill="#e49a62"><path class="spark s1" d="M880 170v22h-4v-22h-22v-4h22v-22h4v22h22v4Z"/><path class="spark s2" d="M950 520v14h-3v-14h-14v-3h14v-14h3v14h14v3Z"/><path class="spark s3" d="M1450 360v17h-3v-17h-17v-3h17v-17h3v17h17v3Z"/><circle class="twinkle t1" cx="780" cy="280" r="5"/><circle class="twinkle t2" cx="1060" cy="330" r="4"/><circle class="twinkle t3" cx="900" cy="640" r="5"/><circle class="twinkle t4" cx="1450" cy="570" r="4"/></g>
+<g fill="#d87955" opacity=".7"><rect class="float f1" x="740" y="390" width="13" height="13"/><rect class="float f2" x="930" y="730" width="10" height="10"/><rect class="float f3" x="1480" y="230" width="12" height="12"/></g>
+<style>
+.planet{transform-origin:1230px 175px;animation:planetDrift 16s ease-in-out infinite alternate}.plant{transform-origin:330px 605px;animation:leafSway 7s ease-in-out infinite alternate}.laptop{animation:laptopFloat 9s ease-in-out infinite alternate}
+.spark{transform-box:fill-box;transform-origin:center;animation:sparkPulse 3.4s ease-in-out infinite}.s2{animation-delay:1s}.s3{animation-delay:2s}
+.twinkle{animation:twinkle 2.8s ease-in-out infinite}.t2{animation-delay:.7s}.t3{animation-delay:1.4s}.t4{animation-delay:2.1s}
+.float{animation:floatUp 8s ease-in-out infinite}.f2{animation-delay:2.5s}.f3{animation-delay:4.2s}
+@keyframes planetDrift{to{transform:translate(18px,-14px) rotate(8deg)}}@keyframes leafSway{to{transform:rotate(3deg)}}@keyframes laptopFloat{to{transform:translate(0,-10px) rotate(-6deg)}}
+@keyframes sparkPulse{0%,100%{opacity:.35;scale:.7}50%{opacity:1;scale:1.25}}@keyframes twinkle{0%,100%{opacity:.15;scale:.5}50%{opacity:1;scale:1.5}}@keyframes floatUp{0%,100%{translate:0 0;opacity:.25}50%{translate:8px -25px;opacity:.9}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}}
+</style></svg>
