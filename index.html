@@ -1,123 +1,170 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f4f2ed" />
-  <meta name="description" content="Antony — Desarrollador Java enfocado en software, SaaS y soluciones tecnológicas." />
-  <title>Antony — Java Developer & Software Builder</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eeece5">
+  <meta name="description" content="Antony — Desarrollador Java interesado en SaaS, startups y productos digitales B2B.">
+  <title>Antony — Developer / Player 01</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--paper:#f4f2ed;--ink:#20211f;--muted:#777871;--line:#d9d7cf;--accent:#b94f35;--olive:#777d5b;--white:#fffefa;--ease:cubic-bezier(.22,1,.36,1)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 64px));margin:auto}.mono{font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.09em;font-size:10px}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:800 19px Manrope,sans-serif;letter-spacing:-.08em}.brand span{color:var(--accent)}nav{display:flex;gap:34px;align-items:center;font-size:12px;color:#5e5f59}nav a{transition:color .25s}nav a:hover{color:var(--accent)}.nav-cta{border:1px solid var(--ink);padding:11px 16px;border-radius:2px;color:var(--ink)}.hero{min-height:690px;padding:100px 0 78px;display:grid;grid-template-columns:1.35fr .65fr;gap:48px;align-items:center;position:relative}.eyebrow{display:flex;gap:12px;align-items:center;color:var(--muted);margin-bottom:28px}.dot{width:7px;height:7px;background:var(--olive);border-radius:50%;box-shadow:0 0 0 5px #777d5b1c}.hero h1{font:600 clamp(58px,8.5vw,112px)/.96 Manrope,sans-serif;letter-spacing:-.085em;margin:0;max-width:760px}.hero h1 em{font-style:normal;color:var(--accent)}.hero-copy{font-size:16px;line-height:1.75;color:#696a64;max-width:465px;margin:30px 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:22px;padding:15px 18px;background:var(--ink);color:var(--white);font-size:12px;transition:transform .35s var(--ease),background .25s}.btn:hover{transform:translateY(-4px);background:var(--accent)}.btn.secondary{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn.secondary:hover{border-color:var(--ink);background:transparent}.arrow{font-size:17px;line-height:10px}.hero-art{height:390px;position:relative;display:grid;place-items:center}.orbit{width:300px;height:300px;border:1px solid #c9c7bd;border-radius:50%;position:absolute;animation:orbit 28s linear infinite}.orbit:before,.orbit:after{content:'';position:absolute;border:1px solid #d7d4ca;border-radius:50%;inset:28px}.orbit:after{inset:62px}.orbit-dot{position:absolute;width:11px;height:11px;border-radius:50%;background:var(--accent);top:42px;left:42px;box-shadow:0 0 0 7px #b94f3517}.monogram{width:190px;height:190px;background:#e7e3d9;display:grid;place-items:center;transform:rotate(-8deg);position:relative;box-shadow:18px 20px 0 #d7d2c6}.monogram span{font:800 100px/.8 Manrope;letter-spacing:-.13em;margin-left:-10px}.monogram small{position:absolute;bottom:18px;right:17px;font:10px 'DM Mono';letter-spacing:.12em}.art-note{position:absolute;right:0;bottom:20px;color:var(--muted);writing-mode:vertical-rl}.scroll-note{position:absolute;bottom:32px;left:0;color:var(--muted);display:flex;gap:14px;align-items:center}.scroll-note:before{content:'';width:38px;height:1px;background:var(--accent)}.section{padding:105px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:46px}.kicker{color:var(--accent);margin-bottom:15px}.section h2{font:600 clamp(38px,5vw,62px)/1 Manrope;letter-spacing:-.075em;margin:0}.section-intro{color:var(--muted);font-size:13px;line-height:1.7;max-width:280px}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px}.about-text{font:500 24px/1.5 Manrope;letter-spacing:-.04em;max-width:560px}.about-text span{color:var(--muted)}.facts{border-top:1px solid var(--line)}.fact{display:flex;justify-content:space-between;padding:17px 0;border-bottom:1px solid var(--line);font-size:13px}.fact span:last-child{color:var(--muted)}.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.project{background:var(--white);border:1px solid #e7e4dc;overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}.project:hover{transform:translateY(-7px);box-shadow:0 18px 45px #26251d12}.project-visual{height:270px;position:relative;overflow:hidden;background:#dedbd1;display:grid;place-items:center}.project:nth-child(2) .project-visual{background:#e7e2d7}.project:nth-child(3) .project-visual{background:#d8d9d0}.project:nth-child(4) .project-visual{background:#e6dcd2}.visual-label{position:absolute;top:18px;left:18px;color:#66665e}.browser{width:76%;height:165px;background:#f8f6f0;box-shadow:0 20px 35px #25251c20;transform:rotate(-4deg);transition:transform .7s var(--ease)}.project:hover .browser{transform:rotate(0) scale(1.04)}.browser-bar{height:19px;border-bottom:1px solid #e5e1d8;display:flex;align-items:center;padding:0 9px;gap:4px}.browser-bar i{width:5px;height:5px;background:#c6c2b7;border-radius:50%}.browser-body{padding:17px;display:grid;grid-template-columns:1.2fr .8fr;gap:10px}.browser-copy b{display:block;width:90%;height:9px;background:#292a27;margin-bottom:8px}.browser-copy span{display:block;width:75%;height:4px;background:#d0cdc4;margin:5px 0}.browser-block{background:#d7d2c5;min-height:85px}.city-card{width:230px;height:155px;background:#262824;position:relative;transform:rotate(5deg);box-shadow:15px 17px 0 #a9a697;display:flex;align-items:center;justify-content:center;color:#eee}.city-card strong{font:800 54px Manrope;letter-spacing:-.1em}.city-card small{position:absolute;bottom:13px;left:15px;font:9px 'DM Mono';letter-spacing:.1em;color:#aaa}.stack{display:flex;gap:7px;position:absolute;bottom:25px;right:25px}.stack i{width:25px;height:25px;border:1px solid #7c806c;background:#d6d9ce;display:block}.code-sheet{width:75%;height:170px;background:#252722;box-shadow:15px 15px 0 #b8b9ad;transform:rotate(-3deg);padding:24px;color:#d6d5c9;font:10px/2 'DM Mono';transition:transform .7s var(--ease)}.project:hover .code-sheet{transform:rotate(0) scale(1.04)}.code-sheet .orange{color:#d68b68}.code-sheet .green{color:#a9b48d}.project-meta{padding:22px 23px 24px;display:flex;justify-content:space-between;align-items:start}.project-meta h3{font:600 21px Manrope;letter-spacing:-.05em;margin:0 0 7px}.project-meta p{font-size:12px;color:var(--muted);margin:0}.project-num{color:var(--muted)}.tags{display:flex;gap:6px;margin-top:15px;flex-wrap:wrap}.tag{border:1px solid var(--line);padding:5px 8px;color:#686960;font:9px 'DM Mono';text-transform:uppercase}.services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.service{padding:27px 25px 30px 0;border-right:1px solid var(--line)}.service+.service{padding-left:25px}.service:last-child{border:0}.service .num{color:var(--accent);margin-bottom:34px}.service h3{font:600 21px Manrope;letter-spacing:-.05em;margin:0 0 12px}.service p{font-size:13px;line-height:1.7;color:var(--muted);max-width:260px;margin:0}.contact{padding:110px 0 100px;background:#242621;color:#f4f2ed;position:relative;overflow:hidden}.contact:after{content:'HOLA';position:absolute;font:800 260px Manrope;letter-spacing:-.1em;color:#ffffff08;right:-10px;bottom:-90px;pointer-events:none}.contact .kicker{color:#d58a70}.contact h2{font:600 clamp(52px,8vw,100px)/.95 Manrope;letter-spacing:-.09em;max-width:800px;margin:0 0 30px}.contact p{color:#b9b9ae;font-size:14px;max-width:420px;line-height:1.7;margin-bottom:30px}.contact .btn{background:var(--paper);color:var(--ink)}.contact .btn:hover{background:#d58a70}.contact-links{display:flex;gap:24px;margin-top:42px;font:10px 'DM Mono';text-transform:uppercase;color:#b9b9ae}.contact-links a:hover{color:#fff}.footer{background:#242621;color:#8d8e84;border-top:1px solid #ffffff20;padding:22px 0;font:10px 'DM Mono';display:flex;justify-content:space-between}.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}.reveal.visible{opacity:1;transform:translateY(0)}.delay-1{transition-delay:.1s}.delay-2{transition-delay:.2s}.delay-3{transition-delay:.3s}.cursor{display:inline-block;width:8px;height:8px;background:var(--accent);border-radius:50%;margin-left:8px;vertical-align:middle;animation:pulse 2s ease-in-out infinite}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes pulse{50%{transform:scale(.65);opacity:.5}}@media(max-width:760px){.wrap{width:min(100% - 38px,560px)}.topbar{height:66px}nav{gap:16px}nav a:not(.nav-cta){display:none}.hero{min-height:auto;padding:80px 0 100px;grid-template-columns:1fr;gap:15px}.hero h1{font-size:clamp(58px,15vw,90px)}.hero-art{height:280px;grid-row:1}.orbit{width:220px;height:220px}.monogram{width:145px;height:145px}.monogram span{font-size:77px}.art-note{right:5px}.scroll-note{bottom:28px}.section{padding:78px 0}.section-head{display:block}.section-intro{margin-top:18px}.about-grid{grid-template-columns:1fr;gap:35px}.about-text{font-size:21px}.project-grid{grid-template-columns:1fr}.project-visual{height:235px}.services{grid-template-columns:1fr}.service,.service+.service{padding:22px 0;border-right:0;border-bottom:1px solid var(--line)}.service .num{margin-bottom:15px}.service:last-child{border:0}.contact{padding:80px 0}.contact:after{font-size:150px;bottom:-45px}.footer{gap:15px;flex-wrap:wrap}.contact-links{flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+    :root{--bg:#eeece5;--ink:#20221e;--muted:#77786f;--line:#d5d2c8;--orange:#c45b3e;--lime:#c9d68a;--card:#f8f7f1;--mono:'DM Mono',monospace;--display:'Space Grotesk',sans-serif;--ease:cubic-bezier(.2,.8,.2,1);--spring:cubic-bezier(.22,1.35,.36,1)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}.shell{width:min(1160px,calc(100% - 56px));margin:auto}.mono{font:10px var(--mono);letter-spacing:.11em;text-transform:uppercase}.top{height:74px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.logo{font:700 20px var(--display);letter-spacing:-.1em}.logo i{font-style:normal;color:var(--orange)}.top-right{display:flex;align-items:center;gap:28px}.top nav{display:flex;gap:26px;font-size:12px;color:#65665f}.top nav a{transition:color .2s}.top nav a:hover{color:var(--orange)}.status{display:flex;align-items:center;gap:9px;color:#62645b}.status-dot{width:7px;height:7px;background:#82945b;border-radius:50%;box-shadow:0 0 0 4px #82945b20;animation:statusPulse 2.8s ease-in-out infinite}.progress{height:3px;position:fixed;z-index:20;top:0;left:0;width:100%;background:transparent}.progress span{display:block;height:100%;width:0;background:var(--orange);transform-origin:left}
+.hero{min-height:690px;padding:88px 0 86px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;position:relative}.level{display:flex;align-items:center;gap:12px;color:var(--muted);margin-bottom:27px}.level b{color:var(--orange);font-weight:500}.hero h1{font:600 clamp(64px,9vw,116px)/.88 var(--display);letter-spacing:-.095em;margin:0;max-width:700px}.hero h1 .stroke{color:transparent;-webkit-text-stroke:1.5px var(--ink)}.hero h1 .orange{color:var(--orange)}.hero-copy{font-size:15px;line-height:1.8;color:#686960;max-width:440px;margin:30px 0 28px}.actions{display:flex;gap:11px;flex-wrap:wrap}.btn{border:1px solid var(--ink);background:var(--ink);color:var(--bg);padding:14px 17px;display:inline-flex;gap:24px;align-items:center;font-size:12px;transition:transform .45s var(--spring),background .25s,border-color .25s}.btn:hover{transform:translateY(-4px) rotate(-1deg);background:var(--orange);border-color:var(--orange)}.btn.ghost{background:transparent;color:var(--ink)}.btn.ghost:hover{background:var(--lime);border-color:var(--lime)}.btn span{font-size:17px}.game-panel{position:relative;min-height:420px;display:grid;place-items:center;perspective:900px}.panel-frame{width:min(100%,440px);background:#252720;color:#f1efe7;padding:18px;box-shadow:14px 15px 0 #d0cdc2;transform:rotate(3deg);transition:transform .7s var(--spring);position:relative}.game-panel:hover .panel-frame{transform:rotate(0) translateY(-7px)}.panel-top{display:flex;justify-content:space-between;border-bottom:1px solid #ffffff25;padding:0 0 13px;color:#b6b7a9}.panel-body{padding:24px 8px 18px}.pixel-avatar{height:180px;display:grid;place-items:center;position:relative;overflow:hidden;background:#34372d}.pixel-avatar:before,.pixel-avatar:after{content:'';position:absolute;width:260px;height:1px;background:#ffffff18;transform:rotate(-32deg)}.pixel-avatar:after{transform:rotate(32deg)}.avatar-shape{width:116px;height:116px;background:var(--lime);display:grid;place-items:center;color:#252720;font:700 64px var(--display);letter-spacing:-.1em;transform:rotate(-7deg);box-shadow:9px 9px 0 var(--orange);transition:transform .6s var(--spring)}.game-panel:hover .avatar-shape{transform:rotate(0) scale(1.08)}.scanline{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 4px,#ffffff08 5px)}.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:18px 0 4px}.stat small{display:block;color:#a5a69b;margin-bottom:7px}.stat strong{font:500 13px var(--mono)}.meter{height:5px;background:#ffffff22;margin-top:8px}.meter i{display:block;height:100%;width:82%;background:var(--lime);transform-origin:left;animation:meterIn 1.2s .7s both var(--ease)}.meter.orange i{width:64%;background:var(--orange)}.panel-foot{display:flex;justify-content:space-between;color:#a5a69b;border-top:1px solid #ffffff25;padding-top:12px;margin-top:12px}.float-tag{position:absolute;background:var(--lime);padding:10px 13px;color:#282a23;box-shadow:4px 5px 0 #d0cdc2;transform:rotate(-7deg);animation:float 4s ease-in-out infinite}.float-tag.one{top:40px;right:0}.float-tag.two{bottom:35px;left:-4px;background:#f8f7f1;animation-delay:-2s}.hint{position:absolute;bottom:25px;left:0;color:var(--muted);display:flex;align-items:center;gap:12px}.hint:before{content:'';width:32px;height:1px;background:var(--orange)}
+.section{padding:100px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:42px}.kicker{color:var(--orange);margin-bottom:15px}.section h2{font:600 clamp(40px,5.5vw,68px)/.96 var(--display);letter-spacing:-.085em;margin:0}.sub{max-width:275px;font-size:13px;line-height:1.7;color:var(--muted)}.about{display:grid;grid-template-columns:1.1fr .9fr;gap:90px}.about-lead{font:500 clamp(23px,3vw,34px)/1.35 var(--display);letter-spacing:-.055em;margin:0;max-width:630px}.about-lead span{color:#85867c}.skill-list{border-top:1px solid var(--line)}.skill{padding:15px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;font-size:13px}.skill span:last-child{color:var(--muted);font-family:var(--mono);font-size:10px}
+.quest-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.quest{background:var(--card);border:1px solid #e1ded5;position:relative;overflow:hidden;transform-style:preserve-3d;transition:transform .55s var(--spring),box-shadow .45s}.quest:hover{box-shadow:0 18px 36px #24251f16}.quest-art{height:240px;position:relative;display:grid;place-items:center;overflow:hidden;background:#dedbd0}.quest:nth-child(2) .quest-art{background:#d9ddce}.quest:nth-child(3) .quest-art{background:#e3d5c9}.quest:nth-child(4) .quest-art{background:#d7d8d2}.quest-label{position:absolute;left:17px;top:16px;color:#66675e;z-index:2}.quest-index{position:absolute;right:17px;top:16px;color:#66675e;z-index:2}.art-window{width:75%;height:145px;background:#f8f7f1;box-shadow:9px 12px 0 #b8b5a9;transform:rotate(-4deg);transition:transform .7s var(--spring);padding:12px}.quest:hover .art-window{transform:rotate(0) scale(1.04)}.window-bar{height:12px;border-bottom:1px solid #ddd9cf;display:flex;gap:4px}.window-bar i{width:4px;height:4px;border-radius:50%;background:#aaa99f}.window-content{display:grid;grid-template-columns:1fr .8fr;gap:10px;padding:14px 3px}.fake-lines i{display:block;height:6px;background:#33352e;margin:0 0 8px;width:90%}.fake-lines i:nth-child(2){width:65%;background:#b9b7ad}.fake-lines i:nth-child(3){width:78%;background:#d0cdc3}.fake-block{background:#d8d6cb}.code-art{width:76%;background:#252720;color:#e8e6dd;padding:22px;box-shadow:10px 12px 0 #b9b8ad;transform:rotate(3deg);font:11px/2 var(--mono);transition:transform .7s var(--spring)}.quest:hover .code-art{transform:rotate(0) scale(1.04)}.code-art em{color:var(--orange);font-style:normal}.code-art b{color:var(--lime);font-weight:400}.orbit-art{width:170px;height:170px;border:1px solid #73776a;border-radius:50%;display:grid;place-items:center;position:relative;transition:transform .7s var(--spring)}.quest:hover .orbit-art{transform:rotate(24deg) scale(1.06)}.orbit-art:before,.orbit-art:after{content:'';position:absolute;inset:22px;border:1px solid #929587;border-radius:50%}.orbit-art:after{inset:48px;background:var(--orange);border:0}.orbit-art span{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--ink);top:18px;right:24px;z-index:1}.terminal-art{width:75%;background:#272923;color:#d9dacd;padding:19px;box-shadow:10px 12px 0 #b7b8ad;transform:rotate(-3deg);font:10px/2 var(--mono);transition:transform .7s var(--spring)}.quest:hover .terminal-art{transform:rotate(0) scale(1.04)}.terminal-art .prompt{color:var(--lime)}.quest-info{padding:21px 22px 23px}.quest-info h3{font:600 22px var(--display);letter-spacing:-.06em;margin:0 0 7px}.quest-info p{font-size:12px;color:var(--muted);line-height:1.7;margin:0;max-width:440px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}.chip{border:1px solid var(--line);padding:5px 8px;font:9px var(--mono);text-transform:uppercase;color:#686960}.quest-meta{display:flex;justify-content:space-between;align-items:center}.quest-meta span{font:10px var(--mono);color:var(--muted)}.quest-meta .status-label{color:#778454}
+.focus-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.focus{padding:25px 24px 30px 0;border-right:1px solid var(--line)}.focus+.focus{padding-left:24px}.focus:last-child{border:0}.focus-num{color:var(--orange);margin-bottom:35px}.focus h3{font:600 22px var(--display);letter-spacing:-.05em;margin:0 0 10px}.focus p{font-size:13px;color:var(--muted);line-height:1.7;margin:0;max-width:270px}
+.contact{background:#252720;color:#f1efe7;padding:100px 0 80px;position:relative;overflow:hidden}.contact:after{content:'GG';position:absolute;right:2%;bottom:-125px;font:700 330px/.8 var(--display);letter-spacing:-.12em;color:#ffffff08;pointer-events:none}.contact .kicker{color:var(--lime)}.contact h2{font:600 clamp(55px,8vw,102px)/.9 var(--display);letter-spacing:-.09em;margin:0 0 28px;max-width:800px}.contact p{font-size:14px;color:#b9baae;line-height:1.8;max-width:430px;margin:0 0 27px}.contact .btn{background:var(--lime);color:#252720;border-color:var(--lime)}.contact .btn:hover{background:var(--orange);border-color:var(--orange);color:white}.socials{display:flex;gap:23px;margin-top:38px;color:#b9baae;font:10px var(--mono);text-transform:uppercase}.socials a{transition:color .2s}.socials a:hover{color:var(--lime)}footer{padding:20px 0;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font:10px var(--mono)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}.reveal.in{opacity:1;transform:translateY(0)}.d1{transition-delay:.09s}.d2{transition-delay:.18s}.d3{transition-delay:.27s}.hero .reveal{transition-duration:1s}.hero h1 .line{display:block;overflow:hidden}.hero h1 .line span{display:block;transform:translateY(115%);animation:textUp .9s var(--ease) forwards}.hero h1 .line:nth-child(2) span{animation-delay:.12s}.hero h1 .line:nth-child(3) span{animation-delay:.24s}
+.command{position:fixed;z-index:30;right:22px;bottom:20px;background:var(--ink);color:var(--bg);border:0;padding:12px 14px;font:10px var(--mono);letter-spacing:.08em;cursor:pointer;box-shadow:4px 4px 0 #c8c5bb;transition:transform .3s var(--spring),background .2s}.command:hover{transform:translateY(-4px) rotate(-2deg);background:var(--orange)}.toast{position:fixed;z-index:40;bottom:75px;right:22px;background:var(--lime);color:var(--ink);padding:13px 16px;font:11px var(--mono);box-shadow:4px 4px 0 #c8c5bb;opacity:0;transform:translateY(12px);pointer-events:none;transition:.35s var(--ease)}.toast.show{opacity:1;transform:translateY(0)}
+@keyframes textUp{to{transform:translateY(0)}}@keyframes float{50%{transform:translateY(-9px) rotate(-4deg)}}@keyframes statusPulse{50%{box-shadow:0 0 0 7px #82945b12}}@keyframes meterIn{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(max-width:760px){.shell{width:calc(100% - 38px)}.top{height:66px}.top nav{display:none}.hero{grid-template-columns:1fr;padding:60px 0 95px;gap:0}.hero h1{font-size:clamp(61px,15vw,94px)}.game-panel{grid-row:1;min-height:340px}.panel-frame{max-width:390px}.float-tag.one{right:1%}.float-tag.two{left:0}.hint{bottom:25px}.section{padding:76px 0}.section-head{display:block}.sub{margin-top:17px}.about{grid-template-columns:1fr;gap:32px}.quest-grid{grid-template-columns:1fr}.quest-art{height:220px}.focus-grid{grid-template-columns:1fr}.focus,.focus+.focus{padding:22px 0;border-right:0;border-bottom:1px solid var(--line)}.focus-num{margin-bottom:15px}.focus:last-child{border:0}.contact{padding:78px 0 65px}.contact:after{font-size:190px;bottom:-70px}.socials{flex-wrap:wrap}footer{flex-wrap:wrap;padding-bottom:70px}.command{right:13px;bottom:13px}.toast{right:13px;bottom:65px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}.hero h1 .line span{transform:none;animation:none}}
   </style>
 </head>
 <body>
-  <header class="wrap topbar">
-    <a class="brand" href="#" aria-label="Antony inicio">A<span>.</span></a>
-    <nav aria-label="Navegación principal">
-      <a href="#sobre-mi">Perfil</a><a href="#proyectos">Proyectos</a><a href="#servicios">Enfoque</a>
-      <a class="nav-cta" href="#contacto">Hablemos ↗</a>
-    </nav>
+  <div class="progress"><span id="progress"></span></div>
+  <header class="shell top">
+    <a class="logo" href="#inicio">A<i>.</i></a>
+    <div class="top-right">
+      <nav><a href="#perfil">Perfil</a><a href="#quests">Proyectos</a><a href="#focus">Intereses</a><a href="#contacto">Contacto</a></nav>
+      <div class="status mono"><i class="status-dot"></i> AVAILABLE TO BUILD</div>
+    </div>
   </header>
-
   <main>
-    <section class="wrap hero">
-      <div>
-        <div class="eyebrow mono reveal"><span class="dot"></span> JAVA DEVELOPER · SOFTWARE & PRODUCT</div>
-        <h1 class="reveal delay-1">Software <em>con</em><br>propósito.<br>Productos que<br>resuelven.<span class="cursor"></span></h1>
-        <p class="hero-copy reveal delay-2">Soy Antony, desarrollador Java. Me interesa construir software útil, productos SaaS y soluciones B2B que conviertan problemas reales en oportunidades.</p>
-        <div class="actions reveal delay-3"><a class="btn" href="#proyectos">Ver proyectos <span class="arrow">↘</span></a><a class="btn secondary" href="#sobre-mi">Conocer más <span class="arrow">↗</span></a></div>
+    <section class="shell hero" id="inicio">
+      <div class="hero-copy-wrap">
+        <div class="level mono reveal"><b>PLAYER 01</b><span> / </span> JAVA DEVELOPER <span> / </span> PRODUCT BUILDER</div>
+        <h1 class="reveal"><span class="line"><span>Ideas en</span></span><span class="line"><span class="stroke">modo</span> <span class="orange">build.</span></span><span class="line"><span>Let's play.</span></span></h1>
+        <p class="hero-copy reveal d1">Soy Antony. Me gusta crear con Java, entender cómo funcionan los productos digitales y convertir buenas ideas en software que sí resuelve cosas.</p>
+        <div class="actions reveal d2"><a class="btn" href="#quests">Explorar proyectos <span>↘</span></a><a class="btn ghost" href="#contacto">Iniciar conexión <span>↗</span></a></div>
       </div>
-      <div class="hero-art reveal delay-2" aria-label="Monograma decorativo A">
-        <div class="orbit"><span class="orbit-dot"></span></div>
-        <div class="monogram"><span>A.</span><small>ANTONY / 26</small></div>
-        <div class="art-note mono">JAVA · PRODUCTO · NEGOCIO</div>
+      <div class="game-panel reveal d2">
+        <span class="float-tag one mono">NEW QUEST UNLOCKED ✳</span>
+        <span class="float-tag two mono">JAVA / LVL 01</span>
+        <div class="panel-frame">
+          <div class="panel-top mono"><span>ANTONY.EXE</span><span>PROFILE CARD // 001</span></div>
+          <div class="panel-body">
+            <div class="pixel-avatar"><div class="avatar-shape">A.</div><div class="scanline"></div></div>
+            <div class="stats">
+              <div class="stat"><small class="mono">CLASS</small><strong>JAVA DEVELOPER</strong><div class="meter"><i></i></div></div>
+              <div class="stat"><small class="mono">CURRENT XP</small><strong>ALWAYS LEARNING</strong><div class="meter orange"><i></i></div></div>
+            </div>
+            <div class="panel-foot mono"><span>BUILD / TEST / REPEAT</span><span>● ONLINE</span></div>
+          </div>
+        </div>
       </div>
-      <div class="scroll-note mono">Desliza para descubrir</div>
+      <div class="hint mono">SCROLL TO EXPLORE <span>↓</span></div>
     </section>
-
-    <section class="section" id="sobre-mi">
-      <div class="wrap">
-        <div class="section-head reveal"><div><div class="kicker mono">01 / Perfil</div><h2>Código con visión de producto.</h2></div><p class="section-intro">Me gusta la ingeniería de software, los modelos de negocio tecnológicos y crear productos que puedan crecer.</p></div>
-        <div class="about-grid">
-          <p class="about-text reveal">Soy desarrollador Java y constructor de productos. <span>Me atraen los sistemas bien diseñados, el backend, las automatizaciones y la intersección entre tecnología y negocio: SaaS, startups y servicios B2B.</span></p>
-          <div class="facts reveal delay-1">
-            <div class="fact"><span>Especialidad</span><span>Java Development</span></div>
-            <div class="fact"><span>Proyecto propio</span><span>Urban Life RP</span></div>
-            <div class="fact"><span>Intereses</span><span>SaaS · Startups · B2B</span></div>
-            <div class="fact"><span>Enfoque</span><span>Software con propósito</span></div>
+    <section class="section" id="perfil">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="kicker mono">01 / CHARACTER</div><h2>Un poco sobre mí.</h2></div><p class="sub">No solo me interesa escribir código. También me gusta pensar qué problema resuelve y para quién.</p></div>
+        <div class="about">
+          <p class="about-lead reveal">Soy desarrollador Java con curiosidad por el mundo de los productos digitales. <span>Me llaman la atención los sistemas bien pensados, el backend, las startups y la tecnología que ayuda a hacer crecer negocios.</span></p>
+          <div class="skill-list reveal d1">
+            <div class="skill"><span>Lenguaje favorito</span><span>JAVA</span></div>
+            <div class="skill"><span>Zona de interés</span><span>BACKEND / APIs</span></div>
+            <div class="skill"><span>Universo</span><span>SAAS / STARTUPS</span></div>
+            <div class="skill"><span>Modo de juego</span><span>BUILD & LEARN</span></div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="section" id="proyectos">
-      <div class="wrap">
-        <div class="section-head reveal"><div><div class="kicker mono">02 / Proyectos</div><h2>Construyendo y explorando.</h2></div><p class="section-intro">Proyectos propios, desarrollo de sistemas y experimentos alrededor del software.</p></div>
-        <div class="project-grid">
-          <article class="project reveal">
-            <div class="project-visual"><span class="visual-label mono">01 — PRODUCT / GAMING</span><div class="city-card"><strong>UL.</strong><small>URBAN LIFE ROLEPLAY</small></div><div class="stack"><i></i><i></i><i></i></div></div>
-            <div class="project-meta"><div><h3>Urban Life RP</h3><p>Proyecto de producto digital con sistemas, economía y operaciones conectadas.</p><div class="tags"><span class="tag">Minecraft</span><span class="tag">Java</span><span class="tag">Game systems</span></div></div><span class="project-num mono">01</span></div>
+    <section class="section" id="quests">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="kicker mono">02 / SELECT A QUEST</div><h2>Lo que estoy construyendo.</h2></div><p class="sub">Una selección de áreas y experimentos que forman parte de mi camino como developer.</p></div>
+        <div class="quest-grid">
+          <article class="quest reveal" data-tilt>
+            <div class="quest-art"><span class="quest-label mono">QUEST 001 / BACKEND</span><span class="quest-index mono">01</span><div class="code-art"><em>public class</em> Systems {<br>&nbsp; <b>// Build useful things</b><br>&nbsp; design();<br>&nbsp; develop();<br>&nbsp; improve();<br>}</div></div>
+            <div class="quest-info"><div class="quest-meta"><h3>Java & backend</h3><span class="status-label">IN PROGRESS</span></div><p>Desarrollo de lógica, sistemas e integraciones. Me interesa entender qué hace que el software sea sólido y útil.</p><div class="chips"><span class="chip">Java</span><span class="chip">Backend</span><span class="chip">APIs</span></div></div>
           </article>
-          <article class="project reveal delay-1">
-            <div class="project-visual"><span class="visual-label mono">02 — SOFTWARE / PRODUCT</span><div class="browser"><div class="browser-bar"><i></i><i></i><i></i></div><div class="browser-body"><div class="browser-copy"><b></b><span></span><span></span><span></span></div><div class="browser-block"></div></div></div></div>
-            <div class="project-meta"><div><h3>Productos digitales</h3><p>Exploración de interfaces y experiencias para productos de software.</p><div class="tags"><span class="tag">Frontend</span><span class="tag">UI</span><span class="tag">Motion</span></div></div><span class="project-num mono">02</span></div>
+          <article class="quest reveal d1" data-tilt>
+            <div class="quest-art"><span class="quest-label mono">QUEST 002 / PRODUCT</span><span class="quest-index mono">02</span><div class="art-window"><div class="window-bar"><i></i><i></i><i></i></div><div class="window-content"><div class="fake-lines"><i></i><i></i><i></i></div><div class="fake-block"></div></div></div></div>
+            <div class="quest-info"><div class="quest-meta"><h3>Digital products</h3><span>EXPLORING</span></div><p>Me gusta pensar experiencias digitales claras, útiles y fáciles de usar, desde la idea hasta su funcionamiento.</p><div class="chips"><span class="chip">Product</span><span class="chip">UX</span><span class="chip">Software</span></div></div>
           </article>
-          <article class="project reveal">
-            <div class="project-visual"><span class="visual-label mono">03 — JAVA / BACKEND</span><div class="code-sheet"><span class="orange">public class</span> UrbanSystems {<br>&nbsp;&nbsp;<span class="green"> // Ideas convertidas en sistemas</span><br>&nbsp;&nbsp; build();<br>&nbsp;&nbsp; improve();<br>&nbsp;&nbsp; repeat();<br>}</div></div>
-            <div class="project-meta"><div><h3>Java & backend</h3><p>Productos SaaS, lógica de negocio e integraciones con Java.</p><div class="tags"><span class="tag">Java</span><span class="tag">Paper</span><span class="tag">Plugins</span></div></div><span class="project-num mono">03</span></div>
+          <article class="quest reveal" data-tilt>
+            <div class="quest-art"><span class="quest-label mono">QUEST 003 / SAAS</span><span class="quest-index mono">03</span><div class="orbit-art"><span></span></div></div>
+            <div class="quest-info"><div class="quest-meta"><h3>SaaS & startups</h3><span>RESEARCHING</span></div><p>Exploro cómo nacen los productos, cómo encuentran usuarios y cómo se convierten en negocios sostenibles.</p><div class="chips"><span class="chip">SaaS</span><span class="chip">Startups</span><span class="chip">Business</span></div></div>
           </article>
-          <article class="project reveal delay-1">
-            <div class="project-visual"><span class="visual-label mono">04 — PRODUCT THINKING</span><div class="monogram" style="width:150px;height:150px;box-shadow:12px 13px 0 #c7b8aa"><span style="font-size:75px">A.</span><small>IDEAS IN PROGRESS</small></div></div>
-            <div class="project-meta"><div><h3>Ideas de producto</h3><p>Ideas y experimentos sobre SaaS, automatización y herramientas B2B.</p><div class="tags"><span class="tag">Exploración</span><span class="tag">Diseño</span><span class="tag">Prototipos</span></div></div><span class="project-num mono">04</span></div>
+          <article class="quest reveal d1" data-tilt>
+            <div class="quest-art"><span class="quest-label mono">QUEST 004 / B2B</span><span class="quest-index mono">04</span><div class="terminal-art"><span class="prompt">$</span> solve(real_problem);<br><span class="prompt">$</span> automate(repetitive_work);<br><span class="prompt">$</span> create(value);<br><span class="prompt">_</span></div></div>
+            <div class="quest-info"><div class="quest-meta"><h3>Tools for business</h3><span>IDEAS LOADING</span></div><p>Me interesan las herramientas B2B, la automatización y el software que simplifica el trabajo de las personas.</p><div class="chips"><span class="chip">B2B</span><span class="chip">Automation</span><span class="chip">Tools</span></div></div>
           </article>
         </div>
       </div>
     </section>
-
-    <section class="section" id="servicios">
-      <div class="wrap">
-        <div class="section-head reveal"><div><div class="kicker mono">03 / Áreas de trabajo</div><h2>Tecnología que mueve negocios.</h2></div></div>
-        <div class="services">
-          <article class="service reveal"><div class="num mono">01 / BACKEND</div><h3>Desarrollo Java</h3><p>Backend, APIs, lógica de negocio y sistemas mantenibles para productos reales.</p></article>
-          <article class="service reveal delay-1"><div class="num mono">02 / SAAS</div><h3>Desarrollo de sistemas</h3><p>Herramientas digitales que resuelven necesidades concretas y pueden escalar.</p></article>
-          <article class="service reveal delay-2"><div class="num mono">03 / B2B</div><h3>Soluciones B2B</h3><p>Software a medida, integraciones y automatización de procesos para empresas.</p></article>
+    <section class="section" id="focus">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="kicker mono">03 / SKILL TREE</div><h2>Ramas que quiero explorar.</h2></div></div>
+        <div class="focus-grid">
+          <article class="focus reveal"><div class="focus-num mono">NODE 01 / BUILD</div><h3>Software engineering</h3><p>Java, backend, APIs, arquitectura y sistemas que puedan mantenerse y evolucionar.</p></article>
+          <article class="focus reveal d1"><div class="focus-num mono">NODE 02 / CREATE</div><h3>Product thinking</h3><p>Detectar problemas, diseñar soluciones y convertir ideas en productos digitales.</p></article>
+          <article class="focus reveal d2"><div class="focus-num mono">NODE 03 / GROW</div><h3>SaaS & B2B</h3><p>Startups, modelos de negocio y herramientas que generan valor para otras empresas.</p></article>
         </div>
       </div>
     </section>
-
     <section class="contact" id="contacto">
-      <div class="wrap reveal">
-        <div class="kicker mono">04 / CONTACTO</div>
-        <h2>¿Tienes un problema<br>que resolver?</h2>
-        <p>Me interesan los productos ambiciosos, las ideas bien ejecutadas y colaborar en proyectos donde la tecnología genere valor.</p>
-        <a class="btn" href="https://github.com/Antonysss" target="_blank" rel="noreferrer">Conectar en GitHub <span class="arrow">↗</span></a>
-        <div class="contact-links"><a href="https://github.com/Antonysss" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#proyectos">Proyectos ↗</a><a href="#sobre-mi">Sobre mí ↗</a></div>
+      <div class="shell reveal">
+        <div class="kicker mono">04 / END OF LEVEL? NOT EVEN CLOSE.</div>
+        <h2>Let's build<br>something good.</h2>
+        <p>Siempre hay una idea interesante por explorar. Si estás construyendo algo relacionado con software, producto o tecnología, podemos conectar.</p>
+        <a class="btn" href="https://github.com/Antonysss" target="_blank" rel="noreferrer">Find me on GitHub <span>↗</span></a>
+        <div class="socials"><a href="https://github.com/Antonysss" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#quests">Quests ↗</a><a href="#perfil">Character ↗</a></div>
       </div>
     </section>
   </main>
-  <footer class="wrap footer"><span>© 2026 ANTONY — HECHO CON INTENCIÓN.</span><span>JAVA · SOFTWARE · PRODUCT.</span></footer>
+  <footer class="shell"><span>© 2026 ANTONY / PLAYER 01</span><span>MADE TO BUILD, NOT TO BLEND IN.</span></footer>
+  <button class="command" id="surprise" type="button">PRESS START ↗</button>
+  <div class="toast" id="toast" role="status">QUEST ACCEPTED. KEEP BUILDING.</div>
   <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+          entry.target.classList.add('in');
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.14, rootMargin: '0px 0px -35px 0px' });
-    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-    document.querySelectorAll('a[href^="#"]').forEach((link) => {
-      link.addEventListener('click', (event) => {
-        const target = document.querySelector(link.getAttribute('href'));
-        if (target) {
-          event.preventDefault();
-          target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-        }
+    }, {threshold:.13,rootMargin:'0px 0px -35px 0px'});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    const progress = document.querySelector('#progress');
+    let ticking = false;
+    function updateProgress(){
+      const max = document.documentElement.scrollHeight - innerHeight;
+      progress.style.width = (max > 0 ? scrollY / max * 100 : 0) + '%';
+      ticking = false;
+    }
+    addEventListener('scroll', () => {
+      if (!ticking) { requestAnimationFrame(updateProgress); ticking = true; }
+    }, {passive:true});
+
+    if (!reduceMotion && matchMedia('(pointer:fine)').matches) {
+      document.querySelectorAll('[data-tilt]').forEach(card => {
+        card.addEventListener('pointermove', e => {
+          const r = card.getBoundingClientRect();
+          const x = (e.clientX-r.left)/r.width-.5;
+          const y = (e.clientY-r.top)/r.height-.5;
+          card.style.transform = 'perspective(850px) rotateX(' + (-y*4) + 'deg) rotateY(' + (x*5) + 'deg) translateY(-3px)';
+        });
+        card.addEventListener('pointerleave', () => card.style.transform = '');
       });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({behavior:reduceMotion?'auto':'smooth'}); }
+      });
+    });
+
+    const toast = document.querySelector('#toast');
+    document.querySelector('#surprise').addEventListener('click', () => {
+      toast.classList.add('show');
+      document.querySelector('#inicio').scrollIntoView({behavior:reduceMotion?'auto':'smooth'});
+      window.setTimeout(() => toast.classList.remove('show'), 2300);
     });
   </script>
 </body>
