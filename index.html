@@ -104,10 +104,22 @@ body:before{opacity:.08;mix-blend-mode:screen}
 .loader-name{font:500 12px var(--mono);letter-spacing:.45em;margin:25px 0 35px 6px;opacity:0;animation:loaderName .7s .35s ease forwards}
 .loader-track{width:min(220px,55vw);height:2px;background:#3b3c34;overflow:hidden}.loader-track i{display:block;width:100%;height:100%;background:var(--orange);transform:scaleX(0);transform-origin:left;animation:loaderProgress 1.5s .15s ease forwards}
 .loader-caption{color:#85867b;font-size:9px;margin-top:15px;letter-spacing:.16em}.loader-caption span{color:var(--lime);margin-left:8px}body.is-loading{overflow:hidden}
-.cursor-cat{position:fixed;z-index:80;left:0;top:0;width:66px;pointer-events:none;opacity:0;transform:translate3d(-100px,-100px,0) rotate(-8deg);transition:opacity .35s ease;filter:drop-shadow(3px 4px 0 #0008);will-change:transform}
-.cursor-cat.visible{opacity:1}.cursor-cat svg{width:100%;overflow:visible}.cursor-cat svg>path:first-child{fill:none;stroke:#d87955;stroke-width:7;stroke-linecap:round}
-.cursor-cat svg>path:nth-child(2){fill:#e9e6dc;stroke:#171815;stroke-width:3;stroke-linejoin:round}.cursor-cat .cat-eye,.cursor-cat .cat-mouth,.cursor-cat .cat-whiskers{fill:none;stroke:#171815;stroke-width:3;stroke-linecap:round}
+.cursor-cat{position:fixed;z-index:80;left:0;top:0;width:76px;pointer-events:none;opacity:0;transform:translate3d(-100px,-100px,0);transition:opacity .18s ease;filter:drop-shadow(3px 4px 0 #0008);will-change:transform}
+.cursor-cat.visible{opacity:1}.cursor-cat svg{width:100%;overflow:visible;animation:catStalk .42s ease-in-out infinite alternate}
+.cursor-cat .cat-tail{fill:none;stroke:#d87955;stroke-width:8;stroke-linecap:round;transform-origin:27px 58px;animation:catTail .32s ease-in-out infinite alternate}
+.cursor-cat .cat-body{fill:#e9e6dc;stroke:#171815;stroke-width:3;stroke-linejoin:round;transform-origin:60px 52px;animation:catSneak .42s ease-in-out infinite alternate}
+.cursor-cat .cat-inner-ear{fill:none;stroke:#d87955;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.cursor-cat .cat-pupil{fill:#171815;transform:translate(var(--look-x,0px),var(--look-y,0px))}
+.cursor-cat .cat-nose,.cursor-cat .cat-whiskers,.cursor-cat .cat-paw{fill:none;stroke:#171815;stroke-width:2.7;stroke-linecap:round;stroke-linejoin:round}
+.cursor-cat .cat-paw{stroke:#d87955;stroke-width:3;animation:catPaws .21s ease-in-out infinite alternate}
+.cursor-cat.pounce svg{animation:catPounce .22s cubic-bezier(.2,.8,.2,1)}
 .cursor-cat span{display:block;text-align:center;font:8px var(--mono);color:#c7d58b;letter-spacing:.08em;margin-top:-3px}
+@keyframes catStalk{from{translate:0 0}to{translate:0 -3px}}
+@keyframes catTail{from{rotate:-18deg}to{rotate:22deg}}
+@keyframes catSneak{from{scale:1 1}to{scale:1.04 .94}}
+@keyframes catPaws{from{translate:0 -1px}to{translate:0 2px}}
+@keyframes catPounce{0%{scale:1}45%{scale:1.22 .82}100%{scale:1}}
+
 .impulso-art{background:#24251f!important;isolation:isolate}.impulso-ui{width:76%;max-width:350px;background:#e9e6dc;color:#24251f;padding:15px 17px 12px;position:relative;z-index:1;box-shadow:9px 12px 0 #090a08;transform:rotate(-3deg);transition:transform .7s var(--spring)}
 .quest:hover .impulso-ui{transform:rotate(0) scale(1.04)}.impulso-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #d1cec3;padding-bottom:10px}
 .impulso-top b{font:700 20px var(--display);letter-spacing:-.09em}.impulso-top b span{color:#d87955}.impulso-top small{font:8px var(--mono);color:#73746b}
@@ -127,7 +139,7 @@ body:before{opacity:.08;mix-blend-mode:screen}
 </head>
 <body class="is-loading">
   <div class="loader" id="loader" aria-label="Cargando portafolio"><div class="loader-mark">A<span>.</span></div><div class="loader-name">ANTONY</div><div class="loader-track"><i></i></div><div class="loader-caption mono">INITIALIZING PORTFOLIO <span id="loadPercent">00</span>%</div></div>
-  <div class="cursor-cat" id="cursorCat" aria-hidden="true"><svg viewBox="0 0 100 74"><path class="cat-tail" d="M22 48 C3 45 7 20 20 25"/><path d="M25 39 L25 17 L40 27 Q51 23 62 28 L77 16 L78 42 Q84 57 64 61 L39 61 Q20 59 25 39Z"/><path class="cat-eye" d="M35 42h2m22 0h2"/><path class="cat-mouth" d="M47 48q4 4 8 0"/><path class="cat-whiskers" d="M22 51l-12 -3m12 8l-12 3m65 -8l13 -3m-13 8l13 3"/></svg><span>michi.exe</span></div>
+  <div class="cursor-cat" id="cursorCat" aria-hidden="true"><svg viewBox="0 0 120 88"><path class="cat-tail" d="M34 61 C12 68 5 51 17 39 C24 32 30 39 26 45"/><path class="cat-body" d="M28 47 L29 20 L46 31 Q60 25 74 32 L91 19 L93 50 Q100 68 79 72 L48 72 Q25 70 28 47Z"/><path class="cat-inner-ear" d="M34 28l1 12 8-7m39 0 8-8-1 14"/><ellipse class="cat-pupil" cx="47" cy="48" rx="3" ry="5"/><ellipse class="cat-pupil" cx="73" cy="48" rx="3" ry="5"/><path class="cat-nose" d="M57 56q3 3 6 0"/><path class="cat-whiskers" d="M28 56l-14-4m14 10l-14 3m77-9l14-4m-14 10l14 3"/><path class="cat-paw" d="M42 69l-2 9m10-8l-1 9m27-10l2 9m8-10l3 9"/></svg><span>michi.exe</span></div>
   <div class="progress"><span id="progress"></span></div>
   <header class="shell top">
     <a class="logo" href="#inicio">A<i>.</i></a>
@@ -250,20 +262,41 @@ body:before{opacity:.08;mix-blend-mode:screen}
       setTimeout(finishIntro, 2400);
     }
 
-    // A cat companion follows the pointer with a soft delay.
+    // The cat stalks the pointer, keeps its eyes on it and pounces on quick moves.
     const cat = document.querySelector('#cursorCat');
     if (cat && !reduceMotion && matchMedia('(pointer:fine)').matches) {
-      let targetX=-100,targetY=-100,currentX=-100,currentY=-100,catFrame=0;
+      let targetX=-120,targetY=-120,currentX=-120,currentY=-120,catFrame=0,lastX=0,lastY=0,lastTime=0,pounceTimer=0;
       addEventListener('pointermove', event => {
-        targetX=event.clientX+17; targetY=event.clientY+12; cat.classList.add('visible');
-        if (!catFrame) catFrame=requestAnimationFrame(moveCat);
-      }, {passive:true});
-      addEventListener('pointerleave', () => cat.classList.remove('visible'));
+        const now=performance.now();
+        const dx=event.clientX-lastX,dy=event.clientY-lastY;
+        const speed=Math.hypot(dx,dy);
+        const angle=Math.atan2(dy,dx);
+        // Stay just behind the moving pointer, like a cat stalking its prey.
+        targetX=event.clientX-Math.cos(angle)*29-37;
+        targetY=event.clientY-Math.sin(angle)*22-39;
+        const lookX=Math.max(-2,Math.min(2,dx*.035));
+        const lookY=Math.max(-2,Math.min(2,dy*.035));
+        cat.style.setProperty('--look-x',lookX+'px');
+        cat.style.setProperty('--look-y',lookY+'px');
+        if(lastTime && speed>18){
+          cat.classList.add('pounce');
+          clearTimeout(pounceTimer);
+          pounceTimer=setTimeout(()=>cat.classList.remove('pounce'),230);
+        }
+        lastX=event.clientX;lastY=event.clientY;lastTime=now;
+        cat.classList.add('visible');
+        if(!catFrame) catFrame=requestAnimationFrame(moveCat);
+      },{passive:true});
+      addEventListener('pointerleave',()=>cat.classList.remove('visible'));
       function moveCat(){
-        currentX+=(targetX-currentX)*.14; currentY+=(targetY-currentY)*.14;
-        const angle=Math.max(-12,Math.min(12,(targetX-currentX)*.08));
-        cat.style.transform='translate3d('+currentX+'px,'+currentY+'px,0) rotate('+angle+'deg)';
-        if(Math.abs(targetX-currentX)+Math.abs(targetY-currentY)>.5) catFrame=requestAnimationFrame(moveCat); else catFrame=0;
+        // High follow gain removes the sluggish trailing effect.
+        currentX+=(targetX-currentX)*.42;
+        currentY+=(targetY-currentY)*.42;
+        const dx=targetX-currentX,dy=targetY-currentY;
+        const tilt=Math.max(-15,Math.min(15,dx*.16));
+        cat.style.transform='translate3d('+currentX+'px,'+currentY+'px,0) rotate('+tilt+'deg)';
+        if(Math.abs(dx)+Math.abs(dy)>.35) catFrame=requestAnimationFrame(moveCat);
+        else catFrame=0;
       }
     }
 
