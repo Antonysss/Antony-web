@@ -160,6 +160,32 @@ body>*:not(.ambient-scene):not(.loader){position:relative;z-index:1}
 @media(max-width:760px){.loader-art{object-position:48% center}.loader-content{padding:28px 25px}}
 @media(prefers-reduced-motion:reduce){.loader-art,.loader-content{animation:none!important}}
 
+
+/* Performance pass: keep the custom artwork, remove expensive full-screen effects. */
+.ambient-scene{position:absolute;inset:0 0 auto;height:100vh;opacity:.27;mask-image:linear-gradient(to bottom,#000 0%,#000 52%,transparent 100%);contain:paint;overflow:hidden}
+.ambient-main{animation:none!important;filter:none!important;transform:none!important;opacity:.78}
+.ambient-orbit{animation:none!important;filter:none!important;opacity:.18}
+.ambient-grain{display:none!important}
+.loader-art{animation:none!important;filter:none!important}
+.loader-vignette{background:linear-gradient(90deg,#11120f88,#11120f22 45%,#11120f88),linear-gradient(0deg,#11120fbb,transparent 65%,#11120f44)}
+.loader-content{backdrop-filter:none!important;background:#11120fbd;box-shadow:0 8px 28px #0004}
+.cursor-cat{filter:none!important}
+.cursor-cat svg{animation:none!important}
+.cursor-cat .cat-tail,.cursor-cat .cat-body,.cursor-cat .cat-paw{animation:none!important}
+.impulso-orbit{animation:none!important}
+body:before{display:none!important}
+.quest:before{opacity:.45}
+@media(max-width:900px){
+  .ambient-scene{opacity:.19}
+  .ambient-orbit{display:none}
+  .ambient-main{object-position:center}
+  .cursor-cat{display:none!important}
+  .quest,.btn,.game-panel{transform:none!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .ambient-main,.ambient-orbit,.loader-art{animation:none!important}
+}
+
   </style>
 </head>
 <body class="is-loading">
@@ -349,42 +375,9 @@ body>*:not(.ambient-scene):not(.loader){position:relative;z-index:1}
       navSections.forEach(section => sectionObserver.observe(section));
     }
 
-    if (!reduceMotion && matchMedia('(pointer:fine)').matches) {
-      document.querySelectorAll('.quest').forEach(card => {
-        card.addEventListener('pointermove', event => {
-          const rect = card.getBoundingClientRect();
-          card.style.setProperty('--mx', (event.clientX - rect.left) + 'px');
-          card.style.setProperty('--my', (event.clientY - rect.top) + 'px');
-        });
-      });
-
-      document.querySelectorAll('.btn').forEach(button => {
-        button.addEventListener('pointermove', event => {
-          const rect = button.getBoundingClientRect();
-          const x = (event.clientX - rect.left - rect.width / 2) * .035;
-          const y = (event.clientY - rect.top - rect.height / 2) * .08;
-          button.style.transform = 'translate(' + x + 'px,' + y + 'px)';
-        });
-        button.addEventListener('pointerleave', () => button.style.transform = '');
-      });
-
-      const panel = document.querySelector('.game-panel');
-      if (panel) {
-        panel.addEventListener('pointermove', event => {
-          const rect = panel.getBoundingClientRect();
-          const x = (event.clientX - rect.left) / rect.width - .5;
-          const y = (event.clientY - rect.top) / rect.height - .5;
-          panel.style.setProperty('--float-x', (x * 5) + 'px');
-          panel.style.setProperty('--float-y', (y * 5) + 'px');
-          const frame = panel.querySelector('.panel-frame');
-          if (frame) frame.style.transform = 'translate(' + (x * 5) + 'px,' + (y * 5) + 'px) rotate(' + (3 - x * 2) + 'deg)';
-        });
-        panel.addEventListener('pointerleave', () => {
-          const frame = panel.querySelector('.panel-frame');
-          if (frame) frame.style.transform = '';
-        });
-      }
-    }
+    // Keep pointer effects lightweight: the cat remains the only cursor follower.
+    // Card spotlight, magnetic buttons and 3D panel parallax were removed to avoid
+    // repeated layout reads and transform updates on every pointer event.
 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
