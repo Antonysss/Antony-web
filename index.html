@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#eeece5">
+  <meta name="theme-color" content="#171815">
   <meta name="description" content="Antony — Desarrollador de software con experiencia práctica en gestión de proyectos digitales, bases de datos, administración de comunidades y desarrollo de productos tecnológicos.">
   <title>Antony — Software Developer / Project Builder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,9 +86,48 @@ body:before{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
 @media(max-width:760px){.hero:before{width:260px;height:260px;right:-8%;top:7%}.hero:after{width:190px;height:190px;right:0;top:14%}.section:before{left:19px}.focus:hover{padding-top:22px}}
 @media(prefers-reduced-motion:reduce){body:before{display:none}.hero:before,.hero:after,.avatar-shape,.scanline,.panel-frame,.orbit-art,.orbit-art span,.contact:before,.contact:after{animation:none!important}.quest-art:after,.btn:after{display:none}.skill,.focus,.quest,.top nav a:after{transition:none!important}}
 
+
+:root{--bg:#171815;--ink:#efeee7;--muted:#a3a397;--line:#3a3b33;--orange:#d87955;--lime:#c7d58b;--card:#22231e}
+body{background-color:var(--bg);background-image:radial-gradient(ellipse at 12% 8%,#ffffff09 0,transparent 34%),radial-gradient(ellipse at 88% 34%,#d8795510 0,transparent 30%)}
+body:before{opacity:.08;mix-blend-mode:screen}
+.top nav{color:#b8b8ac}.hero-copy,.sub,.quest-info p,.focus p,.contact p{color:#b0b0a5}
+.quest{background:#20211c;border-color:#393a32}.quest-art{background:#303129}.quest:nth-child(2) .quest-art{background:#30362b}.quest:nth-child(3) .quest-art{background:#3a302b}.quest:nth-child(4) .quest-art{background:#30312d}.quest:nth-child(5) .quest-art{background:#303129}
+.art-window{background:#e9e6dc;box-shadow:9px 12px 0 #171815}.chip{border-color:#45463d;color:#c2c1b5}
+.skill-list,.skill,.focus-grid,.focus{border-color:var(--line)}.skill{color:#e4e2d9}.skill span:last-child,.focus-num{color:var(--orange)}
+.command{background:#e9e6dc;color:#20211c;box-shadow:4px 4px 0 #080907}.toast{box-shadow:4px 4px 0 #080907}
+.btn.ghost{color:var(--ink);border-color:#77776d}.btn.ghost:hover{color:#171815}
+.panel-frame{box-shadow:14px 15px 0 #090a08}.float-tag.two{background:#303129;color:#efeee7;box-shadow:4px 5px 0 #090a08}
+.quest:before{background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),#d8795520,transparent 70%)}
+.focus:hover{background:#ffffff08}.contact{background:#10110f}.contact:after{color:#ffffff08}footer{color:#8d8e83}
+.loader{position:fixed;inset:0;z-index:1000;background:#11120f;color:#efeee7;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .8s ease,visibility .8s ease}.loader.done{opacity:0;visibility:hidden}
+.loader-mark{font:700 clamp(72px,14vw,140px)/.8 var(--display);letter-spacing:-.13em;animation:loaderMark .9s var(--spring) both}.loader-mark span{color:var(--orange)}
+.loader-name{font:500 12px var(--mono);letter-spacing:.45em;margin:25px 0 35px 6px;opacity:0;animation:loaderName .7s .35s ease forwards}
+.loader-track{width:min(220px,55vw);height:2px;background:#3b3c34;overflow:hidden}.loader-track i{display:block;width:100%;height:100%;background:var(--orange);transform:scaleX(0);transform-origin:left;animation:loaderProgress 1.5s .15s ease forwards}
+.loader-caption{color:#85867b;font-size:9px;margin-top:15px;letter-spacing:.16em}.loader-caption span{color:var(--lime);margin-left:8px}body.is-loading{overflow:hidden}
+.cursor-cat{position:fixed;z-index:80;left:0;top:0;width:66px;pointer-events:none;opacity:0;transform:translate3d(-100px,-100px,0) rotate(-8deg);transition:opacity .35s ease;filter:drop-shadow(3px 4px 0 #0008);will-change:transform}
+.cursor-cat.visible{opacity:1}.cursor-cat svg{width:100%;overflow:visible}.cursor-cat svg>path:first-child{fill:none;stroke:#d87955;stroke-width:7;stroke-linecap:round}
+.cursor-cat svg>path:nth-child(2){fill:#e9e6dc;stroke:#171815;stroke-width:3;stroke-linejoin:round}.cursor-cat .cat-eye,.cursor-cat .cat-mouth,.cursor-cat .cat-whiskers{fill:none;stroke:#171815;stroke-width:3;stroke-linecap:round}
+.cursor-cat span{display:block;text-align:center;font:8px var(--mono);color:#c7d58b;letter-spacing:.08em;margin-top:-3px}
+.impulso-art{background:#24251f!important;isolation:isolate}.impulso-ui{width:76%;max-width:350px;background:#e9e6dc;color:#24251f;padding:15px 17px 12px;position:relative;z-index:1;box-shadow:9px 12px 0 #090a08;transform:rotate(-3deg);transition:transform .7s var(--spring)}
+.quest:hover .impulso-ui{transform:rotate(0) scale(1.04)}.impulso-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #d1cec3;padding-bottom:10px}
+.impulso-top b{font:700 20px var(--display);letter-spacing:-.09em}.impulso-top b span{color:#d87955}.impulso-top small{font:8px var(--mono);color:#73746b}
+.impulso-greeting{font:600 clamp(17px,2.5vw,25px)/1.05 var(--display);letter-spacing:-.06em;margin:17px 0}.impulso-greeting em{font-style:normal;color:#bd6548}
+.impulso-stats{display:grid;grid-template-columns:1fr 1fr;gap:9px}.impulso-stats>div{background:#dedbd0;padding:9px}
+.impulso-stats small{display:block;font:7px var(--mono);color:#77776d}.impulso-stats strong{display:block;font:600 14px var(--display);margin:5px 0}
+.impulso-stats i{display:block;height:3px;background:#c4c1b5;position:relative}.impulso-stats i:after{content:"";display:block;width:68%;height:100%;background:#bd6548}
+.impulso-nav{display:flex;justify-content:space-around;padding-top:12px;color:#77776d;font-size:14px}
+.impulso-orbit{position:absolute;width:230px;height:230px;border:1px solid #c7d58b55;border-radius:50%;right:-35px;bottom:-90px;z-index:-1;animation:slowOrbit 35s linear infinite}
+.impulso-orbit:after{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--orange);top:22px;left:36px}
+@keyframes loaderMark{from{opacity:0;transform:translateY(24px) scale(.92)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes loaderName{to{opacity:1;letter-spacing:.32em}}@keyframes loaderProgress{to{transform:scaleX(1)}}
+@keyframes sectionArrival{from{opacity:.72;filter:blur(2px);transform:translateY(12px)}to{opacity:1;filter:blur(0);transform:translateY(0)}}.section-arrive .section-head{animation:sectionArrival .7s var(--ease) both}
+@media(max-width:760px){.cursor-cat{width:48px}.impulso-ui{width:82%}}@media(pointer:coarse){.cursor-cat{display:none}}
+@media(prefers-reduced-motion:reduce){.loader-mark,.loader-name,.loader-track i{animation:none!important}.loader-track i{transform:scaleX(1)}.cursor-cat{display:none}.section-arrive .section-head{animation:none!important}}
+
   </style>
 </head>
-<body>
+<body class="is-loading">
+  <div class="loader" id="loader" aria-label="Cargando portafolio"><div class="loader-mark">A<span>.</span></div><div class="loader-name">ANTONY</div><div class="loader-track"><i></i></div><div class="loader-caption mono">INITIALIZING PORTFOLIO <span id="loadPercent">00</span>%</div></div>
+  <div class="cursor-cat" id="cursorCat" aria-hidden="true"><svg viewBox="0 0 100 74"><path class="cat-tail" d="M22 48 C3 45 7 20 20 25"/><path d="M25 39 L25 17 L40 27 Q51 23 62 28 L77 16 L78 42 Q84 57 64 61 L39 61 Q20 59 25 39Z"/><path class="cat-eye" d="M35 42h2m22 0h2"/><path class="cat-mouth" d="M47 48q4 4 8 0"/><path class="cat-whiskers" d="M22 51l-12 -3m12 8l-12 3m65 -8l13 -3m-13 8l13 3"/></svg><span>michi.exe</span></div>
   <div class="progress"><span id="progress"></span></div>
   <header class="shell top">
     <a class="logo" href="#inicio">A<i>.</i></a>
@@ -139,10 +178,14 @@ body:before{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
     </section>
     <section class="section" id="quests">
       <div class="shell">
-        <div class="section-head reveal"><div><div class="kicker mono">02 / EXPERIENCE & PROJECTS</div><h2>Experiencia en acción.</h2></div><p class="sub">Desarrollo de software, liderazgo de iniciativas digitales y administración de comunidades: distintas áreas que conecto para sacar proyectos adelante.</p></div>
+        <div class="section-head reveal"><div><div class="kicker mono">02 / SELECTED WORK / PROJECTS</div><h2>Experiencia en acción.</h2></div><p class="sub">Productos que estoy construyendo, experiencia técnica y proyectos que he impulsado.</p></div>
         <div class="quest-grid">
+          <article class="quest reveal impulso-card" data-tilt>
+            <div class="quest-art impulso-art"><span class="quest-label mono">PRODUCT 001 / IMPULSO</span><span class="quest-index mono">01</span><div class="impulso-ui"><div class="impulso-top"><b>impulso<span>•</span></b><small>BUSINESS OS</small></div><div class="impulso-greeting">Tu negocio.<br><em>Tu crecimiento.</em></div><div class="impulso-stats"><div><small>VENTAS</small><strong>$ 24,850</strong><i></i></div><div><small>CLIENTES</small><strong>128</strong><i></i></div></div><div class="impulso-nav"><span>⌂</span><span>▦</span><span>◎</span><span>↗</span></div></div><div class="impulso-orbit"></div></div>
+            <div class="quest-info"><div class="quest-meta"><h3>Impulso</h3><span class="status-label">IN DEVELOPMENT</span></div><p>Una app de gestión para jóvenes emprendedores y negocios físicos que venden por redes sociales o desde un local. Centraliza clientes, ventas, pedidos, catálogo, citas, servicios, empleados, finanzas, reportes y fidelización en una sola herramienta.</p><div class="chips"><span class="chip">Product development</span><span class="chip">Mobile + desktop</span><span class="chip">Business tools</span><span class="chip">B2B</span></div></div>
+          </article>
           <article class="quest reveal" data-tilt>
-            <div class="quest-art"><span class="quest-label mono">EXPERIENCE 001 / SOFTWARE</span><span class="quest-index mono">01</span><div class="code-art"><em>public class</em> Systems {<br>&nbsp; <b>// Build useful things</b><br>&nbsp; design();<br>&nbsp; develop();<br>&nbsp; improve();<br>}</div></div>
+            <div class="quest-art"><span class="quest-label mono">EXPERIENCE 002 / SOFTWARE</span><span class="quest-index mono">02</span><div class="code-art"><em>public class</em> Systems {<br>&nbsp; <b>// Build useful things</b><br>&nbsp; design();<br>&nbsp; develop();<br>&nbsp; improve();<br>}</div></div>
             <div class="quest-info"><div class="quest-meta"><h3>Desarrollo de software</h3><span class="status-label">ACTIVE</span></div><p>Actualmente participo como developer en un entorno de startup de software. Trabajo en la construcción de soluciones digitales y en el desarrollo de funcionalidades, con interés en backend, APIs y arquitectura mantenible.</p><div class="chips"><span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">Backend</span><span class="chip">APIs</span></div></div>
           </article>
           <article class="quest reveal d1" data-tilt>
@@ -184,7 +227,54 @@ body:before{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
   <button class="command" id="surprise" type="button">PRESS START ↗</button>
   <div class="toast" id="toast" role="status">QUEST ACCEPTED. KEEP BUILDING.</div>
   <script>
+
     const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Short branded intro sequence.
+    const loader = document.querySelector('#loader');
+    const loadPercent = document.querySelector('#loadPercent');
+    const startedAt = performance.now();
+    function finishIntro(){
+      if (!loader || loader.classList.contains('done')) return;
+      loader.classList.add('done');
+      document.body.classList.remove('is-loading');
+      setTimeout(() => loader.remove(), 900);
+    }
+    if (reduceMotion) finishIntro();
+    else {
+      const introTimer = setInterval(() => {
+        const pct = Math.min(100, Math.round((performance.now()-startedAt)/15));
+        if (loadPercent) loadPercent.textContent = String(pct).padStart(2,'0');
+        if (pct >= 100) { clearInterval(introTimer); finishIntro(); }
+      }, 20);
+      setTimeout(finishIntro, 2400);
+    }
+
+    // A cat companion follows the pointer with a soft delay.
+    const cat = document.querySelector('#cursorCat');
+    if (cat && !reduceMotion && matchMedia('(pointer:fine)').matches) {
+      let targetX=-100,targetY=-100,currentX=-100,currentY=-100,catFrame=0;
+      addEventListener('pointermove', event => {
+        targetX=event.clientX+17; targetY=event.clientY+12; cat.classList.add('visible');
+        if (!catFrame) catFrame=requestAnimationFrame(moveCat);
+      }, {passive:true});
+      addEventListener('pointerleave', () => cat.classList.remove('visible'));
+      function moveCat(){
+        currentX+=(targetX-currentX)*.14; currentY+=(targetY-currentY)*.14;
+        const angle=Math.max(-12,Math.min(12,(targetX-currentX)*.08));
+        cat.style.transform='translate3d('+currentX+'px,'+currentY+'px,0) rotate('+angle+'deg)';
+        if(Math.abs(targetX-currentX)+Math.abs(targetY-currentY)>.5) catFrame=requestAnimationFrame(moveCat); else catFrame=0;
+      }
+    }
+
+    // Give each destination a brief entrance movement as it enters view.
+    if (!reduceMotion && 'IntersectionObserver' in window) {
+      const transitions = new IntersectionObserver(entries => entries.forEach(entry => {
+        if(entry.isIntersecting){entry.target.classList.remove('section-arrive');void entry.target.offsetWidth;entry.target.classList.add('section-arrive');}
+      }),{threshold:.12});
+      document.querySelectorAll('main > section').forEach(section=>transitions.observe(section));
+    }
+
 
     // Small interactions that work as static assets on GitHub Pages.
     const navLinks = [...document.querySelectorAll('.top nav a[href^="#"]')];
