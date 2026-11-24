@@ -35,12 +35,4 @@
 <!-- stars and sparks -->
 <g fill="#e49a62"><path class="spark s1" d="M880 170v22h-4v-22h-22v-4h22v-22h4v22h22v4Z"/><path class="spark s2" d="M950 520v14h-3v-14h-14v-3h14v-14h3v14h14v3Z"/><path class="spark s3" d="M1450 360v17h-3v-17h-17v-3h17v-17h3v17h17v3Z"/><circle class="twinkle t1" cx="780" cy="280" r="5"/><circle class="twinkle t2" cx="1060" cy="330" r="4"/><circle class="twinkle t3" cx="900" cy="640" r="5"/><circle class="twinkle t4" cx="1450" cy="570" r="4"/></g>
 <g fill="#d87955" opacity=".7"><rect class="float f1" x="740" y="390" width="13" height="13"/><rect class="float f2" x="930" y="730" width="10" height="10"/><rect class="float f3" x="1480" y="230" width="12" height="12"/></g>
-<style>
-.planet{transform-origin:1230px 175px;animation:planetDrift 16s ease-in-out infinite alternate}.plant{transform-origin:330px 605px;animation:leafSway 7s ease-in-out infinite alternate}.laptop{animation:laptopFloat 9s ease-in-out infinite alternate}
-.spark{transform-box:fill-box;transform-origin:center;animation:sparkPulse 3.4s ease-in-out infinite}.s2{animation-delay:1s}.s3{animation-delay:2s}
-.twinkle{animation:twinkle 2.8s ease-in-out infinite}.t2{animation-delay:.7s}.t3{animation-delay:1.4s}.t4{animation-delay:2.1s}
-.float{animation:floatUp 8s ease-in-out infinite}.f2{animation-delay:2.5s}.f3{animation-delay:4.2s}
-@keyframes planetDrift{to{transform:translate(18px,-14px) rotate(8deg)}}@keyframes leafSway{to{transform:rotate(3deg)}}@keyframes laptopFloat{to{transform:translate(0,-10px) rotate(-6deg)}}
-@keyframes sparkPulse{0%,100%{opacity:.35;scale:.7}50%{opacity:1;scale:1.25}}@keyframes twinkle{0%,100%{opacity:.15;scale:.5}50%{opacity:1;scale:1.5}}@keyframes floatUp{0%,100%{translate:0 0;opacity:.25}50%{translate:8px -25px;opacity:.9}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}}
-</style></svg>
+</svg>
